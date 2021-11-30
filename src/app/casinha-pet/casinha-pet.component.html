@@ -1,0 +1,19 @@
+
+<div class="container ">
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a [routerLink]="['/home']" routerLinkActive="active">Inicio</a></li>
+        <li class="breadcrumb-item" [routerLink]="['/casinhaPet']" routerLinkActive="active">CasinhaPet</li>
+      </ol>
+    </nav>
+  </div>
+<div class="casinhaPet">
+<div class="casinhaPetCss" *ngFor = "let casinhaPet of casinhaPet">
+    <p>{{casinhaPet.nome}}</p>
+    <p>{{casinhaPet.tamanho}}</p>
+    <p>{{casinhaPet.valor}}</p>
+    <img [src]= "casinhaPet.imagem" >
+
+</div>
+</div>
+
